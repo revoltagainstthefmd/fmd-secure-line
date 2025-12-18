@@ -8,23 +8,39 @@ body {
   font-family: sans-serif;
 }
 
+/* Allgemeine Box */
 .box {
   background: white;
-  width: 320px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
 }
 
-.title {
-  margin: 0 0 15px 0;
+/* Login bleibt schmal */
+.login-box {
+  width: 320px;
+}
+
+/* Chat über ganze Breite */
+.chat-box {
+  width: 100vw;
+  max-width: none;
+  height: 90vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  flex-direction: column;
 }
 
-.title img {
-  height: 24px;
+/* Großes Logo */
+.logo {
+  display: block;
+  width: 50%;
+  margin: 0 auto 10px auto;
+}
+
+/* Titel */
+.title {
+  text-align: center;
+  margin: 0 0 15px 0;
 }
 
 input {
@@ -48,7 +64,7 @@ button {
 #log {
   font-family: monospace;
   font-size: 0.9em;
-  max-height: 300px;
+  flex: 1;
   overflow-y: auto;
   margin-bottom: 10px;
 }
