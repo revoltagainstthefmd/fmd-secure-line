@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: serif;
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -77,16 +77,22 @@ button {
   font-size: 0.9em;
 }
 
+.login-box {
+  width: 320px;
+  text-align: center; /* Box zentriert */
+}
+
 .login-row {
   display: flex;
   align-items: center;
+  justify-content: center; /* zentriert die gesamte Zeile innerhalb der Box */
   margin-bottom: 10px;
 }
 
 .login-label {
   font-family: serif;
   margin-right: 10px;
-  width: 80px; /* fixierte Breite für die Labels */
+  width: 80px; /* fixierte Breite */
   text-align: right;
 }
 
