@@ -40,7 +40,7 @@ loginBtn.addEventListener("click", () => {
   if (USERS[u] === p) {
     currentUser = u;
     loginDiv.style.display = "none";
-    chatDiv.style.display = "flex";
+    chatDiv.style.display = "block";
   } else {
     errDiv.textContent = "Wrong login";
   }
@@ -68,25 +68,10 @@ onSnapshot(
     snap.forEach(doc => {
       const m = doc.data();
 
-      const msg = document.createElement("div");
-      msg.className = `message ${m.user === currentUser ? "me" : "them"}`;
+      const line = document.createElement("div");
+      line.textContent = `${m.user}: ${m.text} (GMT ${new Date(m.time).toUTCString()})`;
 
-      const user = document.createElement("div");
-      user.className = "user";
-      user.textContent = m.user;
-
-      const text = document.createElement("div");
-      text.textContent = m.text;
-
-      const time = document.createElement("div");
-      time.style.fontSize = "0.75em";
-      time.textContent = `GMT ${new Date(m.time).toUTCString()}`;
-
-      msg.appendChild(user);
-      msg.appendChild(text);
-      msg.appendChild(time);
-
-      logDiv.appendChild(msg);
+      logDiv.appendChild(line);
     });
 
     logDiv.scrollTop = logDiv.scrollHeight;
