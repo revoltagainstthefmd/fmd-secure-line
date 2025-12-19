@@ -1,3 +1,78 @@
+/* Grundlayout */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  font-family: sans-serif;
+}
+
+/* Allgemeine Box */
+.box {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+/* Login bleibt kompakt */
+.login-box {
+  width: 320px;
+}
+
+/* Chat nutzt fast den ganzen Bildschirm */
+.chat-box {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Großes Logo über Titel */
+.logo {
+  display: block;
+  width: 50%;
+  margin: 0 auto 10px auto;
+}
+
+/* Titel */
+.title {
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+/* Eingaben */
+input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 6px;
+}
+
+/* Fehlertext */
+#err {
+  color: red;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* Chat-Log */
+#log {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Einzelne Nachricht */
 .message {
   max-width: 70%;
   margin: 6px 0;
@@ -7,20 +82,33 @@
   font-size: 0.9em;
 }
 
+/* Eigene Nachrichten rechts */
 .me {
   margin-left: auto;
   background: #e6f0ff;
   text-align: right;
 }
 
+/* Fremde Nachrichten links */
 .them {
   margin-right: auto;
   background: #eee;
   text-align: left;
 }
 
+/* User-Label */
 .user {
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 0.75em;
   margin-bottom: 2px;
+}
+
+/* Eingabezeile unten */
+.input-row {
+  display: flex;
+  gap: 6px;
+}
+
+.input-row input {
+  flex: 1;
 }
