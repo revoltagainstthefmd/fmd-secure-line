@@ -76,3 +76,22 @@ button {
   padding: 6px;
   font-size: 0.9em;
 }
+
+.login-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.login-label {
+  font-family: serif;
+  margin-right: 10px;
+  width: 80px; /* fixierte Breite für die Labels */
+  text-align: right;
+}
+
+.login-row input {
+  flex: 1;
+  padding: 6px;
+  font-family: sans-serif;
+}
