@@ -82,6 +82,10 @@ button {
   overflow-y: auto;
 }
 
+#log div {
+  white-space: pre-wrap;
+}
+
 /* Eingabezeile unter Chat */
 .input-row {
   display: flex;
