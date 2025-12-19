@@ -18,7 +18,7 @@ const app = initializeApp({
 const db = getFirestore(app);
 
 /* Fake Login */
-const USERS = { A: "passA", B: "passB" };
+const USERS = {desertplateau: "061297", rubydewdrop: "176908" };
 let currentUser = null;
 
 /* DOM */
