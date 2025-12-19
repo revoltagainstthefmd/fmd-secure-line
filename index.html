@@ -7,18 +7,26 @@
 </head>
 <body>
 
+<!-- LOGIN -->
 <div class="login-box" id="login">
-  <h2>Login</h2>
+  <img src="logo-login.png" class="logo" alt="Login Logo">
+  <h2 class="title">Login</h2>
+
   <input id="user" placeholder="username (A oder B)">
   <input id="pw" type="password" placeholder="password">
   <button id="login-btn">Login</button>
   <div id="err"></div>
 </div>
 
+<!-- CHAT -->
 <div class="chat-box" id="chat" style="display:none">
+  <img src="logo-chat.png" class="logo" alt="Chat Logo">
+  <h2 class="title">Chat</h2>
+
   <div id="log"></div>
+
   <div class="input-row">
-    <input id="msg">
+    <input id="msg" placeholder="Type a message">
     <button id="send-btn">Send</button>
   </div>
 </div>

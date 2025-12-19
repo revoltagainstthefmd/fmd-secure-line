@@ -4,22 +4,62 @@ body {
   display: flex;
   justify-content: center;
   padding: 20px;
+  background: #f5f5f5;
 }
 
+/* Login Box */
 .login-box {
   width: 320px;
+  text-align: center;
 }
 
+/* Chat Box */
 .chat-box {
   width: 100%;
 }
 
+/* Logos über Titel */
+.logo {
+  display: block;
+  width: 50%;
+  margin: 0 auto 10px auto;
+}
+
+.title {
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+/* Input / Buttons */
+input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 6px;
+}
+
+/* Error Text */
+#err {
+  color: red;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* Chat log */
 #log {
   font-family: monospace;
   font-size: 0.9em;
   margin-bottom: 10px;
+  max-height: 70vh;
+  overflow-y: auto;
 }
 
+/* Input row */
 .input-row {
   display: flex;
   gap: 6px;

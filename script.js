@@ -67,10 +67,8 @@ onSnapshot(
 
     snap.forEach(doc => {
       const m = doc.data();
-
       const line = document.createElement("div");
       line.textContent = `${m.user}: ${m.text} (GMT ${new Date(m.time).toUTCString()})`;
-
       logDiv.appendChild(line);
     });
 
